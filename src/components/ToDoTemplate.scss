@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+
+.ToDoTemplate {
+  width: 512px;
+  margin-left: auto; //width가 주어진 상태에서 좌우 중앙 정렬
+  margin-right: auto;
+  margin-top: 6rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.app-title {
+  background: #044600;
+  color: white;
+  height: 4rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background: white;
+}
+
+.bagel-fat-one-regular {
+  font-family: "Bagel Fat One", serif;
+  font-weight: 400;
+  font-style: normal;
+}

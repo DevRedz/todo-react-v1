@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+.TodoListItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  transition: background 0.3s ease-in-out;
+  &:nth-child(even) {
+    background: #f8f9fa;
+  }
+  .checkbox {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    svg {
+      font-size: 1.5rem;
+    }
+    .text {
+      margin-left: 0.5rem;
+      flex: 1;
+    }
+    &.checked {
+      svg {
+        color: #dee2e6;
+      }
+      .text {
+        color: #adb5bd;
+        text-decoration: line-through;
+      }
+    }
+  }
+  .remove {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: red;
+    cursor: pointer;
+    &:hover {
+      color: #ff8787;
+    }
+  }
+  & + & {
+    border-top: 1px solid #dee2e6;
+  }
+}
+.nanum-gothic-regular {
+  font-family: "Nanum Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nanum-gothic-bold {
+  font-family: "Nanum Gothic", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nanum-gothic-extrabold {
+  font-family: "Nanum Gothic", serif;
+  font-weight: 800;
+  font-style: normal;
+}
